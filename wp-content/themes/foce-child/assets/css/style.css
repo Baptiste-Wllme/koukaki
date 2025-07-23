@@ -6,7 +6,7 @@
     transform: rotate(360deg);
   }
 }
-.flower-rotate {
+.story__article::after {
   animation: rotateFlower 20s linear infinite;
 }
 
@@ -72,12 +72,8 @@
 
 .no-animation {
   opacity: 1 !important;
-  animation: fadeStatic 2s ease forwards !important;
-}
-
-.no-animation {
-  opacity: 1 !important;
   animation: none !important;
+  transform: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

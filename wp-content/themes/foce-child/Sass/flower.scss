@@ -7,6 +7,7 @@
   }
 }
 
-.flower-rotate {
-  animation: rotateFlower 20s linear infinite;
+.story__article::after {
+    animation: rotateFlower 20s linear infinite;
 }
+

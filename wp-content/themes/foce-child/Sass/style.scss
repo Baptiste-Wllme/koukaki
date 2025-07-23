@@ -68,12 +68,8 @@
 }
 
 .no-animation {
-    opacity: 1 !important;
-    animation: fadeStatic 2s ease forwards !important;
-}
-
-.no-animation {
   opacity: 1 !important;
   animation: none !important;
+  transform: none !important;
 }
 

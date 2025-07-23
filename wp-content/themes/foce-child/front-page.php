@@ -8,9 +8,11 @@ get_header();
             <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " class="fade-section-bot"  alt="logo Fleurs d'oranger & chats errants" >
         </section>
         <section id="story" class="story fade-section-bot">
-            <h2 class="no-animation">L'histoire</h2>
+            <h2 >L'histoire</h2>
             <article id="" class="story__article ">
-                <p ><?php echo get_theme_mod('story'); ?></p>
+                <p class="no-animation">
+                    <?php echo get_theme_mod('story'); ?>
+                </p>    
             </article>
             <?php
             $args = array(
@@ -65,6 +67,7 @@ get_header();
                 <p>Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
             </div>
             </section>
+                <!-- <?php get_template_part('template-parts/section', 'oscars'); ?> --> 
     </main><!-- #main -->
 
 <?php
