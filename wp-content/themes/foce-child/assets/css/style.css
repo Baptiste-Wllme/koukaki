@@ -1,3 +1,15 @@
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.flower-rotate {
+  animation: rotateFlower 20s linear infinite;
+}
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -11,7 +23,7 @@
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
@@ -21,26 +33,51 @@
 @keyframes fadeInTop {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(-50px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 @keyframes fadeInBot {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
-.section-fade {
+.fade-section-top {
   opacity: 0;
-  animation: fadeInLeft 1s ease forwards;
+  animation: fadeInTop 2s ease forwards;
+}
+
+.fade-section-bot {
+  opacity: 0;
+  animation: fadeInBot 2s ease forwards;
+}
+
+.fade-section-left {
+  opacity: 0;
+  animation: fadeInLeft 2s ease forwards;
+}
+
+.fade-section-right {
+  opacity: 0;
+  animation: fadeInRight 2s ease forwards;
+}
+
+.no-animation {
+  opacity: 1 !important;
+  animation: fadeStatic 2s ease forwards !important;
+}
+
+.no-animation {
+  opacity: 1 !important;
+  animation: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
