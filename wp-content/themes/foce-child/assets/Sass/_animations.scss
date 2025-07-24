@@ -1,17 +1,24 @@
+
+// animation de la page //
+
 .fade-section-top {
+  
   animation: fadeInTop 2s ease forwards;
 }
 
 .fade-section-bot {
-  animation: fadeInBot 2s ease forwards;
+    
+    animation: fadeInBot 2s ease forwards;
 }
 
 .fade-section-left {
-  animation: fadeInLeft 2s ease forwards;
+    
+    animation: fadeInLeft 2s ease forwards;
 }
 
 .fade-section-right {
-  animation: fadeInRight 2s ease forwards;
+    
+    animation: fadeInRight 2s ease forwards;
 }
 
 .fade-title {
@@ -20,22 +27,42 @@
   animation: fadeInUp 1s ease forwards;
 }
 
-.title-to-animate span .title-text {
-  display: inline-block;
-  opacity: 1;
-  transform: translateY(150px);
-  transition: opacity 1s ease, transform 1s ease;
+// Animation titres au scroll //
+
+.title-to-animate {
+  span {
+    .title-text {
+       display: inline-block;
+        opacity: 1;
+        transform: translateY(150px);
+        transition: opacity 1s ease, transform 1s ease;
+       
+    }
+   
+  }
+  
 }
 
-.title-visible span .title-text {
-  opacity: 1;
-  transform: translateY(10px);
+.title-visible {
+  span {
+    .title-text {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    
+  }
 }
 
 .wall {
   display: inline-block;
   overflow: hidden;
 }
+
+
+
+
+
+// Rotation de la fleurs hibiscus //
 
 @keyframes rotateFlower {
   0% {
@@ -45,9 +72,14 @@
     transform: rotate(360deg);
   }
 }
-.story__article::after {
-  animation: rotateFlower 20s linear infinite;
+
+.story__article::after {                           // class flower //
+    animation: rotateFlower 20s linear infinite;
 }
+
+
+// Les keyframes //
+
 
 @keyframes fadeInLeft {
   0% {
@@ -59,18 +91,20 @@
     transform: translateX(0);
   }
 }
-@keyframes fadeInRight {
-  0% {
+
+@keyframes fadeInRight { 
+    0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(+50px);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes fadeInTop {
-  0% {
+    0% {
     opacity: 0;
     transform: translateY(-50px);
   }
@@ -79,15 +113,14 @@
     transform: translateY(0);
   }
 }
+
 @keyframes fadeInBot {
-  0% {
+    0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(+50px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
