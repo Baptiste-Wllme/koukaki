@@ -10,8 +10,9 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer fade-section-bot">
+     
+	<footer id="colophon" class="site-footer fade-section-bot"> *
+    <?php get_template_part('template-parts/section', 'nomination');?> 
         <ul>
             <li><a href="#">Mentions Légales</a></li>
             <li><a href="#">STUDIO KOUKAKI</a></li>

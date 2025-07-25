@@ -1,0 +1,38 @@
+
+
+.nomination-title {
+    background-image: url("/wp-content/themes/foce-child/assets/images/orange_rectangle_bg.png");
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 4rem 4rem;
+}
+
+#nomination {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20rem;
+    .nomiation-oscar {
+        width: 20%;
+        height: fit-content;
+    }
+}
+
+#colophon {
+    flex-direction: column;
+}
+
+.site-footer {
+    padding-top: 0;
+}
+
+.site-footer::after {   // violette // 
+    bottom: 35.8rem;
+}
+
+.site-footer::before {  // pâquerette //
+    left: 9rem;
+}

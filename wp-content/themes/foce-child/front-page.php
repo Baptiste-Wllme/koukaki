@@ -5,7 +5,7 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner fade-section-top">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " class="fade-section-bot"  alt="logo Fleurs d'oranger & chats errants" >
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " class="fade-section-bot"  alt="logo Fleurs d'oranger & chats errants" />
         </section>
         <section id="story" class="story fade-section-bot">
             <h2 class="title-to-animate">
@@ -78,7 +78,7 @@ get_header();
                 <p class="fade-section-top">Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
             </div>
             </section>
-                <?php get_template_part('template-parts/section', 'nomination'); ?> 
+                
     </main><!-- #main -->
 
 <?php
