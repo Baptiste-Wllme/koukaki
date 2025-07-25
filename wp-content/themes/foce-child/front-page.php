@@ -66,8 +66,11 @@ get_header();
 
         <section id="studio" class="fade-section-bot">
             <h2 class="title-to-animate">
-                <span class="wall">
-                    <span class="title-text">Studio Koukaki</span>
+                <span class="wall word-1">
+                    <span class="title-text ">Studio</span>
+                </span>
+                <span class="wall word-2">
+                    <span class="title-text ">Koukaki</span>
                 </span>
             </h2>
             <div>
@@ -75,7 +78,7 @@ get_header();
                 <p class="fade-section-top">Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
             </div>
             </section>
-                <!-- <?php get_template_part('template-parts/section', 'oscars'); ?> --> 
+                <?php get_template_part('template-parts/section', 'nomination'); ?> 
     </main><!-- #main -->
 
 <?php

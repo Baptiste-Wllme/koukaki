@@ -20,21 +20,31 @@
   animation: fadeInUp 1s ease forwards;
 }
 
-.title-to-animate span .title-text {
+.title-to-animate {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.title-to-animate .wall {
+  display: inline-block;
+  overflow: hidden;
+}
+.title-to-animate .wall .title-text {
   display: inline-block;
   opacity: 1;
   transform: translateY(150px);
   transition: opacity 1s ease, transform 1s ease;
 }
-
-.title-visible span .title-text {
-  opacity: 1;
-  transform: translateY(10px);
+.title-to-animate .wall.word-1 .title-text {
+  transition-delay: 0s;
+}
+.title-to-animate .wall.word-2 .title-text {
+  transition-delay: 0.5s;
 }
 
-.wall {
-  display: inline-block;
-  overflow: hidden;
+.title-visible .wall .title-text {
+  opacity: 1;
+  transform: translateY(10px);
 }
 
 @keyframes rotateFlower {
