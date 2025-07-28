@@ -5,7 +5,10 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner fade-section-top">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " class="fade-section-bot"  alt="logo Fleurs d'oranger & chats errants" />
+            <?php get_template_part('partials/section', 'banner'); ?>
+            
+
+            
         </section>
         <section id="story" class="story fade-section-bot">
             <h2 class="title-to-animate">
