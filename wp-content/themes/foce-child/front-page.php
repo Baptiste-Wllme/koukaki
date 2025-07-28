@@ -7,7 +7,7 @@ get_header();
         <section class="banner fade-section-top">
             <?php get_template_part('partials/section', 'banner'); ?>
             
-
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" class="hero__logo fade-section-bot" alt="logo Fleurs d'oranger & chats errants" />
             
         </section>
         <section id="story" class="story fade-section-bot">
