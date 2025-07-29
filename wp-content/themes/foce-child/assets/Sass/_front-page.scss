@@ -1,11 +1,18 @@
 
-.banner {
+.banner { 
   background-image: none;
-  background-size: cover
+  background-size: cover;
+  
+  
+ 
 }
 
 .banner img {
-    margin-top: -5%;
+    margin-top: -48%;
+}
+
+.logo-hidden {
+    display: none;
 }
 
 @keyframes floatXY {
@@ -35,11 +42,17 @@
       position: absolute;
       top: 35%;
       left: 15%;
+      
   }
 
   .banner img {
       margin-top: -10%;
       width: 70%;
+  }
+
+  .logo-hidden {
+       display: block;
+       
   }
 
 }

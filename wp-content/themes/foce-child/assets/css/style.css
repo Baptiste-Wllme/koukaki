@@ -168,9 +168,6 @@
   .hero .hero__video-container {
     display: none;
   }
-  .heroimg {
-    display: none;
-  }
 }
 
 .hero__logo {
@@ -185,7 +182,11 @@
 }
 
 .banner img {
-  margin-top: -5%;
+  margin-top: -48%;
+}
+
+.logo-hidden {
+  display: none;
 }
 
 @keyframes floatXY {
@@ -223,6 +224,9 @@
   .banner img {
     margin-top: -10%;
     width: 70%;
+  }
+  .logo-hidden {
+    display: block;
   }
 }
 
