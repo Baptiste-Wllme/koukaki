@@ -40,10 +40,14 @@ get_header();
             'characters_query' => $characters_query
             )); ?>
 
-            <article id="place">
+            <article id="place" class="place-section">
                 <div>
                     <h3 class="title-to-animate">Le Lieu</h3>
                     <p ><?php echo get_theme_mod('place'); ?></p>
+                </div>
+                <div class="clouds-container">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/big_cloud.png" class="cloud cloud1" alt="cloud1"/>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/little_cloud.png" class="cloud cloud2" alt="cloud2"/>
                 </div>
 
             </article>

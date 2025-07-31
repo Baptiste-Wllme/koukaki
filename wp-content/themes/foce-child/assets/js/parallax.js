@@ -26,3 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let factor = window.innerWidth <= 768 ? 0.1 : 0.5;
 const offsetX = scrollY * factor;
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cloud1 = document.querySelector('.cloud1');
+  const cloud2 = document.querySelector('.cloud2');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    cloud1.style.transform = `translateX(-${scrollY * 0.85}px`;
+    cloud2.style.transform = `translateX(-${scrollY * 0.45}px`;
+  });
+})

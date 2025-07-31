@@ -273,4 +273,31 @@
   transform: translateX(130px);
 }
 
+.place-section {
+  position: relative;
+}
+.place-section .clouds-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  gap: 4rem;
+  z-index: 1;
+}
+.place-section .clouds-container .cloud {
+  position: absolute;
+  filter: blur(10px);
+}
+.place-section .clouds-container .cloud1 {
+  top: 10%;
+  left: 160%;
+}
+.place-section .clouds-container .cloud2 {
+  top: 36%;
+  left: 98%;
+}
+
+.story #place {
+  background-image: url(../images/place_bg.png);
+}
+
 /*# sourceMappingURL=style.css.map */

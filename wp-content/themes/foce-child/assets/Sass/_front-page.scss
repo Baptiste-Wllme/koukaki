@@ -115,7 +115,40 @@
       
      }
   }
+}
+.place-section {
+  position: relative;
+
+  .clouds-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    gap: 4rem;
+    z-index: 1;
+
+    .cloud {
+      position: absolute;
+      filter: blur(10px);
+    }
+
+    .cloud1 {
+      top: 10%;
+      left: 160%;
+    }
+
+    .cloud2 {
+      top: 36%;
+      left: 98%;
+    }
+  }
+
   
 }
+
+.story #place {
+    background-image: url(../images/place_bg.png);
+}
+
+
 
 
