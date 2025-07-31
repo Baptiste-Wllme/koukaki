@@ -229,5 +229,48 @@
     display: block;
   }
 }
+.characters .swiper {
+  width: 1450px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+.characters .swiper-wrapper {
+  left: -350px;
+}
+.characters .swiper-slide {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+.characters .swiper-slide figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.characters .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.characters .title-characters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5em;
+}
+.characters .title-characters h3 {
+  background-image: url("../images/orange_characters_bg.png");
+  transform: translateX(130px);
+}
 
 /*# sourceMappingURL=style.css.map */
