@@ -5,9 +5,9 @@ if ( ! $characters_query || ! $characters_query->have_posts() ) {
 }
 ?>
 
-<section class="characters">
+<section id="characters-cat"class="characters">
     <div class="title-characters">
-        <h3 class="title-to-animate">Les personnages</h3>
+        <h3  class="title-to-animate">Les personnages</h3>
     </div>
   
 

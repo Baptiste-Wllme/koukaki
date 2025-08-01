@@ -81,6 +81,16 @@
   }
 }
 
+@keyframes rotateFlowerReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
 .story__article::after {                           // class flower //
     animation: rotateFlower 20s linear infinite;
 }

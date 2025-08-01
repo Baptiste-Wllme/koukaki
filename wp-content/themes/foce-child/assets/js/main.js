@@ -23,3 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   titles.forEach((title) => observer.observe(title));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerButton = document.getElementById("burger-button");
+  const menuOverlay = document.getElementById("menu-overlay");
+
+  if (burgerButton && menuOverlay) {
+    burgerButton.addEventListener("click", function () {
+      menuOverlay.classList.toggle("active");
+    });
+  }
+});
