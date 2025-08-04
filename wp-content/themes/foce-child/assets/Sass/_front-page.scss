@@ -37,7 +37,7 @@
   .banner {
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .hero__logo {
@@ -154,7 +154,7 @@
 .burger-button {
   position: fixed;
   top: 2rem;
-  right: 25rem;
+  right: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -172,13 +172,13 @@
   }
 
   &.open {
-    .line:nth-child(1) {
+    .line1 {
       transform: rotate(45deg) translate(5px, 5px);
     }
-    .line:nth-child(2) {
+    .line2 {
       opacity: 0;
     }
-    .line:nth-child(3) {
+    .line3{
       transform: rotate(-45deg) translate(10px, -8px);
     }
 }}
@@ -193,7 +193,6 @@
   display: none;
   width: 1440px;
   height: 90%;
-  transition: opacity 0.3s ease-in-out;
   top: 7rem;
   overflow: hidden
 }
@@ -203,10 +202,6 @@
   z-index: 100;
 }
 
-.menu-overlay.closing {
-  animation: fadeOutOverlay 0.5s ease forwards;
-  pointer-events: none;
-}
 
 .menu-content {
   text-align: center;
@@ -219,7 +214,7 @@
 }
 
 .entete {
-  height: 100px;
+  height: 11vh;
   background-color: #FFD5A2;
   display: flex;
   justify-content: center;
@@ -361,7 +356,7 @@
 
  &.orange-cat {
     width: 100px;
-    height: 80px;
+    height: 90px;
     background-image: url(../images/orange-cat.png);
     top: 450px;
     left: -380px;

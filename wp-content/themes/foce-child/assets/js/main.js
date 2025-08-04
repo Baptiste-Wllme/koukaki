@@ -30,8 +30,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (burgerButton && menuOverlay) {
     burgerButton.addEventListener("click", function () {
-      menuOverlay.classList.toggle("active");
+      menuOverlay.classList.add("active");
       burgerButton.classList.toggle("open");
+
+      if (menuOverlay.classList.contains("fade-out-overlay")) {
+        menuOverlay.classList.remove("fade-out-overlay");
+        menuOverlay.classList.add("fade-in-overlay");
+      } else {
+        menuOverlay.classList.remove("fade-in-overlay");
+        menuOverlay.classList.add("fade-out-overlay");
+      }
+    });
+    const menuLinks = menuOverlay.querySelectorAll(".menu-links a");
+    menuLinks.forEach(link => {
+      link.addEventListener("click", function () {
+        menuOverlay.classList.remove("fade-in-overlay");
+        menuOverlay.classList.add("fade-out-overlay");
+
+        if (burgerButton.classList.contains("open")) {
+          burgerButton.classList.remove("open");
+        }
+      });
     });
   }
 });

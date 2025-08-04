@@ -31,13 +31,13 @@
         <div class="entete">
             <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             <button id="burger-button" class="burger-button" aria-label="Menu">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
         </button>
         </div>
         
-        <div id="menu-overlay" class="menu-overlay fade-in-overlay">
+        <div id="menu-overlay" class="menu-overlay fade-out-overlay">
             <div>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/LOGO2.png" class="logo-overlay" alt="logo Fleurs d'oranger & chats errants" />
             </div>

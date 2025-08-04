@@ -30,11 +30,11 @@
 }
 
 .fade-in-overlay {
-  animation: fadeInOverlay 2s ease forwards;
+  animation: fadeInOverlay 1.5s ease forwards;
 }
 
 .fade-out-overlay {
-  animation: fadeOutOverlay 2s ease forwards;
+  animation: fadeOutOverlay 1.5s ease forwards;
 }
 
 
@@ -154,23 +154,19 @@
 
 @keyframes fadeInOverlay {
     0% {
-    opacity: 1;
-    transform: translateY(-800px);
+    transform: translateY(-100vh);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes fadeOutOverlay {
   0% {
-    opacity: 1;
     transform: translateY(0);
   }
   100% {
-    opacity: 1;
-    transform: translateY(-800px);
+    transform: translateY(-100vh);
   }
 }
 

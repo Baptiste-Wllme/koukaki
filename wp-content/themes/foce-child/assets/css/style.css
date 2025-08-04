@@ -62,11 +62,11 @@
 }
 
 .fade-in-overlay {
-  animation: fadeInOverlay 2s ease forwards;
+  animation: fadeInOverlay 1.5s ease forwards;
 }
 
 .fade-out-overlay {
-  animation: fadeOutOverlay 2s ease forwards;
+  animation: fadeOutOverlay 1.5s ease forwards;
 }
 
 .title-to-animate {
@@ -158,22 +158,18 @@
 }
 @keyframes fadeInOverlay {
   0% {
-    opacity: 1;
-    transform: translateY(-800px);
+    transform: translateY(-100vh);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 @keyframes fadeOutOverlay {
   0% {
-    opacity: 1;
     transform: translateY(0);
   }
   100% {
-    opacity: 1;
-    transform: translateY(-800px);
+    transform: translateY(-100vh);
   }
 }
 .hero {
@@ -251,7 +247,7 @@
   .banner {
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   .hero__logo {
     position: absolute;
@@ -340,7 +336,7 @@
 .burger-button {
   position: fixed;
   top: 2rem;
-  right: 25rem;
+  right: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -356,13 +352,13 @@
   border-radius: 3px;
   transition: 0.3s;
 }
-.burger-button.open .line:nth-child(1) {
+.burger-button.open .line1 {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.burger-button.open .line:nth-child(2) {
+.burger-button.open .line2 {
   opacity: 0;
 }
-.burger-button.open .line:nth-child(3) {
+.burger-button.open .line3 {
   transform: rotate(-45deg) translate(10px, -8px);
 }
 
@@ -376,7 +372,6 @@
   display: none;
   width: 1440px;
   height: 90%;
-  transition: opacity 0.3s ease-in-out;
   top: 7rem;
   overflow: hidden;
 }
@@ -384,11 +379,6 @@
 .menu-overlay.active {
   display: flex;
   z-index: 100;
-}
-
-.menu-overlay.closing {
-  animation: fadeOutOverlay 0.5s ease forwards;
-  pointer-events: none;
 }
 
 .menu-content {
@@ -401,7 +391,7 @@
 }
 
 .entete {
-  height: 100px;
+  height: 11vh;
   background-color: #FFD5A2;
   display: flex;
   justify-content: center;
@@ -529,7 +519,7 @@
 }
 .float-cat.orange-cat {
   width: 100px;
-  height: 80px;
+  height: 90px;
   background-image: url(../images/orange-cat.png);
   top: 450px;
   left: -380px;
