@@ -29,6 +29,15 @@
   animation: fadeInUp 1s ease forwards;
 }
 
+.fade-in-overlay {
+  animation: fadeInOverlay 2s ease forwards;
+}
+
+.fade-out-overlay {
+  animation: fadeOutOverlay 2s ease forwards;
+}
+
+
 // Animation titres au scroll //
 
 .title-to-animate {
@@ -86,7 +95,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(-260deg);
   }
 }
 
@@ -140,6 +149,28 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+    opacity: 1;
+    transform: translateY(-800px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutOverlay {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-800px);
   }
 }
 

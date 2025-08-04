@@ -30,27 +30,33 @@
 	<header id="masthead" class="site-header">
         <div class="entete">
             <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-        </div>
             <button id="burger-button" class="burger-button" aria-label="Menu">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <div id="menu-overlay" class="menu-overlay ">
-                <div>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/LOGO2.png" class="logo-overlay" alt="logo Fleurs d'oranger & chats errants" />
-                </div>
-                <nav class="menu-content">
-                    <ul class="menu-links">
-                        <li><a href="#story">Histoire</a></li>
-                        <li><a href="#characters-cat">Personnages</a></li>
-                        <li><a href="#place">Lieu</a></li>
-                        <li><a href="#studio">Studio Koukaki</a></li>
-                    </ul>
-                    <div class="rotating flower1"></div>
-                    <div class="rotatingReverse flower2"></div>
-                    <div class="rotatingReverse flower3"></div>
-                </nav>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        </div>
+        
+        <div id="menu-overlay" class="menu-overlay fade-in-overlay">
+            <div>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/LOGO2.png" class="logo-overlay" alt="logo Fleurs d'oranger & chats errants" />
             </div>
+            <nav class="menu-content">
+                <ul class="menu-links">
+                    <li><a href="#story">Histoire</a></li>
+                    <li><a href="#characters-cat">Personnages</a></li>
+                    <li><a href="#place">Lieu</a></li>
+                    <li><a href="#studio">Studio Koukaki</a></li>
+                </ul>
+                <div class="rotating orchid"></div>
+                <div class="rotating sunflower"></div>
+                <div class="rotating flower"></div>
+                <div class="rotating random-flower"></div>
+                <div class="rotating hibiscus-footer"></div>
+                <div class="float-cat purple-cat"></div>
+                <div class="float-cat orange-cat"></div>
+                <div class="float-cat black-cat"></div>
+            </nav>
+        </div>
         
 	</header><!-- #masthead -->

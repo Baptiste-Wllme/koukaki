@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (burgerButton && menuOverlay) {
     burgerButton.addEventListener("click", function () {
       menuOverlay.classList.toggle("active");
+      burgerButton.classList.toggle("open");
     });
   }
 });

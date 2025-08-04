@@ -2,7 +2,7 @@
 .banner { 
   background-image: none;
   background-size: cover;
-  
+  min-height: auto;
   
  
 }
@@ -26,6 +26,8 @@
 .float-logo {
   animation: floatXY 4s ease-in-out infinite;
 }
+
+
 
 
 
@@ -163,12 +165,23 @@
   cursor: pointer;
 
   span {
-    height: 3px;
+    height: 2px;
     background: #000000;
     border-radius: 3px;
     transition: 0.3s;
   }
-}
+
+  &.open {
+    .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+    .line:nth-child(3) {
+      transform: rotate(-45deg) translate(10px, -8px);
+    }
+}}
 
 .menu-overlay {
   position: fixed;
@@ -176,16 +189,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 1;
   display: none;
   width: 1440px;
   height: 90%;
   transition: opacity 0.3s ease-in-out;
   top: 7rem;
+  overflow: hidden
 }
 
 .menu-overlay.active {
   display: flex;
+  z-index: 100;
+}
+
+.menu-overlay.closing {
+  animation: fadeOutOverlay 0.5s ease forwards;
+  pointer-events: none;
 }
 
 .menu-content {
@@ -204,6 +224,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
+  position: relative;
   
 
   .site-title {
@@ -240,49 +262,127 @@
 
 .logo-overlay {
   width: 150px;
+ 
 }
 
 .rotating {
-   animation: rotateFlower 20s linear infinite;
-}
+   background-size: cover;
+   position: absolute;
 
-.rotatingReverse {
-  animation: rotateFlowerReverse 20s linear infinite;
-}
-
-.flower1 {
+  &.orchid {
     width: 100px;
     height: 100px;
     background-image: url(../images/orchid.png);
-    background-size: cover;
-    top: 10px;
-    left: -300px;
-    position: absolute;
+    top: -150px;
+    left: -530px;
+    animation: rotateFlower 20s linear infinite;
   }
 
-.flower2 {
-
+  &.sunflower {
     width: 200px;
     height: 200px;
     background-image: url(../images/Sunflower.png);
-    background-size: cover;
     top: -92px;
     left: 504px;
-    position: absolute;
-}
+    animation: rotateFlowerReverse 20s linear infinite;
+  }
 
-.flower3 {
-
-    width: 200px;
-    height: 200px;
+  &.flower {
+    width: 75px;
+    height: 75px;
     background-image: url(../images/flower.png);
+    top: 200px;
+    left: -250px;
+    animation: rotateFlowerReverse 20s linear infinite;
+  }
+
+  &.random-flower {
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/random_flower.png);
+    top: 200px;
+    left: 900px;
+    animation: rotateFlower 20s linear infinite;
+  }
+
+  &.hibiscus-footer {
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/hibiscus_footer.png);
     background-size: cover;
-    top: -92px;
-    left: 504px;
+    top: 370px;
+    left: 690px;
     position: absolute;
+    animation: rotateFlower 20s linear infinite;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
   
+@keyframes float-cat {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(9px, -9px); }
+  50%  { transform: translate(0, -9px); }
+  75%  { transform: translate(-9px, -9px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes float-cat2 {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-9px, 9px); }
+  50%  { transform: translate(0, 9px); }
+  75%  { transform: translate(9px, 9px); }
+  100% { transform: translate(0, 0); }
+}
+
+.float-cat {
+  background-size: cover;
+  position: absolute;
+
+  &.purple-cat {
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/purple-cat.png);
+    top: -20px;
+    left: -200px;
+    animation: float-cat 3s ease-in-out infinite;
+ }
+
+ &.orange-cat {
+    width: 100px;
+    height: 80px;
+    background-image: url(../images/orange-cat.png);
+    top: 450px;
+    left: -380px;
+    animation: float-cat2 4s ease-in-out infinite;
+ }
+
+ &.black-cat {
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/black-cat.png);
+    top: 250px;
+    left: 600px;
+    animation: float-cat2 4s ease-in-out infinite;
+ }
+}
+
   
+ 
+
+ 
+
  
 
 
