@@ -174,7 +174,7 @@
 }
 .hero {
   position: relative;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 .hero__video-container {
@@ -199,6 +199,9 @@
 @media (max-width: 768px) {
   .hero .hero__video-container {
     display: none;
+  }
+  .hero .hero {
+    height: 48vh !important;
   }
 }
 
@@ -243,11 +246,22 @@
   animation: floatXY 4s ease-in-out infinite;
 }
 
+@media (max-width: 1400px) {
+  .characters .swiper {
+    width: 100vw !important;
+  }
+}
+@media (max-width: 1000px) {
+  .characters .swiper {
+    padding-left: 29rem !important;
+  }
+}
 @media (max-width: 768px) {
   .banner {
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: contain;
+    height: 50vh;
   }
   .hero__logo {
     position: absolute;
@@ -255,11 +269,20 @@
     left: 15%;
   }
   .banner img {
-    margin-top: -10%;
+    margin-top: -20%;
     width: 70%;
   }
   .logo-hidden {
     display: block;
+  }
+  .characters .title-characters {
+    margin-left: 5em;
+  }
+  .characters .swiper {
+    padding-left: 53rem !important;
+  }
+  .burger-button {
+    right: 3rem !important;
   }
 }
 .characters .swiper {
@@ -334,7 +357,7 @@
 }
 
 .burger-button {
-  position: fixed;
+  position: absolute;
   top: 2rem;
   right: 10rem;
   display: flex;
