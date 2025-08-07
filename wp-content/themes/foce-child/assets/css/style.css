@@ -112,8 +112,13 @@
     transform: rotate(-260deg);
   }
 }
-.story__article::after {
+.story__article::after,
+#studio h2::before {
   animation: rotateFlower 20s linear infinite;
+}
+
+h2::after {
+  animation: rotateFlowerReverse 30s linear infinite;
 }
 
 @keyframes fadeInLeft {
@@ -251,16 +256,20 @@
     width: 100vw !important;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .characters .swiper {
     padding-left: 29rem !important;
+  }
+  .cloud1 {
+    top: 10%;
+    left: 67% !important;
   }
 }
 @media (max-width: 768px) {
   .banner {
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 50vh;
   }
   .hero__logo {
@@ -283,6 +292,14 @@
   }
   .burger-button {
     right: 3rem !important;
+  }
+  .cloud1 {
+    top: 10%;
+    left: 56% !important;
+  }
+  .cloud2 {
+    top: 36%;
+    left: 48% !important;
   }
 }
 .characters .swiper {
@@ -345,11 +362,11 @@
 }
 .place-section .clouds-container .cloud1 {
   top: 10%;
-  left: 160%;
+  left: 75%;
 }
 .place-section .clouds-container .cloud2 {
   top: 36%;
-  left: 98%;
+  left: 58%;
 }
 
 .story #place {
@@ -393,9 +410,9 @@
   flex-direction: column;
   z-index: 1;
   display: none;
-  width: 1440px;
+  width: 100vw;
   height: 90%;
-  top: 7rem;
+  top: 6rem;
   overflow: hidden;
 }
 

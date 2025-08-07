@@ -36,10 +36,15 @@
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .characters .swiper {
     padding-left: 29rem !important;
-}
+    }
+
+  .cloud1 {
+      top: 10%;
+      left: 67% !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -48,7 +53,7 @@
   .banner {
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 50vh;
   }
 
@@ -80,6 +85,16 @@
   .burger-button {
     right: 3rem !important;
   }
+
+  .cloud1 {
+      top: 10%;
+      left: 56% !important;
+    }
+
+    .cloud2 {
+      top: 36%;
+      left: 48% !important;
+    }
 }
 
 .characters {
@@ -160,12 +175,12 @@
 
     .cloud1 {
       top: 10%;
-      left: 160%;
+      left: 75%;
     }
 
     .cloud2 {
       top: 36%;
-      left: 98%;
+      left: 58%;
     }
   }
 
@@ -216,9 +231,9 @@
   flex-direction: column;
   z-index: 1;
   display: none;
-  width: 1440px;
+  width: 100vw;
   height: 90%;
-  top: 7rem;
+  top: 6rem;
   overflow: hidden
 }
 

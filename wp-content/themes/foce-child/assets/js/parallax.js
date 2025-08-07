@@ -31,11 +31,36 @@ const offsetX = scrollY * factor;
 document.addEventListener('DOMContentLoaded', function () {
   const cloud1 = document.querySelector('.cloud1');
   const cloud2 = document.querySelector('.cloud2');
+  const placeSection = document.querySelector("#place");
 
-  window.addEventListener('scroll', () => {
+  let cloudsActive = false;
+
+  function cloudscroll() {
+    if(!cloudsActive) return;
+
     const scrollY = window.scrollY;
+    const sectionTop = placeSection.offsetTop;
+    const scrollOffset = scrollY - sectionTop;
 
-    cloud1.style.transform = `translateX(-${scrollY * 0.85}px`;
-    cloud2.style.transform = `translateX(-${scrollY * 0.45}px`;
-  });
+    cloud1.style.transform = `translateX(-${scrollOffset * 0.85}px)`;
+    cloud2.style.transform = `translateX(-${scrollOffset * 0.45}px)`;
+
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          cloudsActive = true;
+        } else {
+          cloudsActive = false;
+          cloud1.style.transform = "translateX(0)"
+          cloud2.style.transform = "translateX(0)"
+        }
+      });
+    },
+  );
+  
+  observer.observe(placeSection);
+  window.addEventListener("scroll", cloudscroll);
 })

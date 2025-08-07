@@ -100,8 +100,13 @@
 }
 
 
-.story__article::after {                           // class flower //
+.story__article::after,
+ #studio h2::before {                           // class flower //
     animation: rotateFlower 20s linear infinite;
+}
+
+h2::after {
+  animation: rotateFlowerReverse 30s linear infinite;
 }
 
 
