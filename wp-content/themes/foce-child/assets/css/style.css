@@ -47,14 +47,6 @@
   animation: fadeInBot 2s ease forwards;
 }
 
-.fade-section-left {
-  animation: fadeInLeft 2s ease forwards;
-}
-
-.fade-section-right {
-  animation: fadeInRight 2s ease forwards;
-}
-
 .fade-title {
   opacity: 0;
   transform: translateY(50px);
@@ -82,7 +74,6 @@
   display: inline-block;
   opacity: 1;
   transform: translateY(150px);
-  transition: opacity 1s ease, transform 1s ease;
 }
 .title-to-animate .wall.word-1 .title-text {
   transition-delay: 0s;
@@ -94,6 +85,7 @@
 .title-visible .wall .title-text {
   opacity: 1;
   transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 @keyframes rotateFlower {
@@ -121,26 +113,6 @@ h2::after {
   animation: rotateFlowerReverse 30s linear infinite;
 }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes fadeInTop {
   0% {
     opacity: 0;
