@@ -232,7 +232,8 @@
   z-index: 1;
   display: none;
   width: 100vw;
-  height: 90%;
+  max-width: 1440px;
+  height: 100%;
   top: 6rem;
   overflow: hidden
 }

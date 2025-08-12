@@ -8,7 +8,7 @@ get_header();
             <?php get_template_part('partials/section', 'banner'); ?>
             
             <div class="js-parallax ">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" class="hero__logo fade-section-bot float-logo " alt="logo Fleurs d'oranger & chats errants" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" class="hero__logo fade-section-bot float-logo  " alt="logo Fleurs d'oranger & chats errants" />
             </div>
             
         </section>

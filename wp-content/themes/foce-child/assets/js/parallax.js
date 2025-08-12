@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function applyParallax() {
     const scrollY = window.scrollY;
 
-    // Ignore sur mobile
     if (window.innerWidth <= 768) return;
 
     const offsetX = scrollY * 0.5;
@@ -15,11 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
       el.style.transform = `translateX(${offsetX}px)`;
     });
   }
-
-  // Appliquer immédiatement une première fois
+  
   applyParallax();
 
-  // Puis à chaque scroll
   window.addEventListener('scroll', applyParallax);
 });
 
